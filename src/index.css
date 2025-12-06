@@ -1,27 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Container */
 .max-width {
   @apply lg:mx-auto lg:px-24 xl:px-48 px-5;
 }
+
+/* Background Gradient */
 .bg-gradient {
-  @apply bg-gradient-to-r from-sky-500 via-purple-500 to-pink-600;
+  @apply bg-gradient-to-r from-red-500 via-green-600 to-orange-400;
 }
+
+/* Text Gradient */
 .text-gradient {
-  @apply bg-clip-text bg-gradient text-transparent;
+  @apply bg-gradient-to-r from-red-500 via-green-600 to-orange-400 bg-clip-text text-transparent;
 }
+
+/* Section Spacing */
 .section {
   @apply pt-28 xl:pt-28 2xl:pt-44;
 }
+
+/* Light/Dark Text */
 .text-content {
   @apply dark:text-light-content text-dark-content;
 }
+
+/* Remove Horizontal Scroll */
 body {
   overflow-x: hidden;
 }
-/* Hide scrollbar for Chrome, Safari and Opera */
+
+/* Hide Scrollbar for Chrome, Safari, Opera */
 body::-webkit-scrollbar {
   display: none;
+}
+
+/* Hide Scrollbar for Edge + Firefox */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ========================= */
+/*      ANIMATIONS FIXED      */
+/* ========================= */
+
+/* Fade In */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide In Left */
+.slide-in-left {
+  transform: translateX(-10px);
+  opacity: 0;
+  animation: slideInLeftAnimation 0.5s forwards;
+}
+
+@keyframes slideInLeftAnimation {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide In Right */
+.slide-in-right {
+  transform: translateX(10px);
+  opacity: 0;
+  animation: slideInRightAnimation 0.5s forwards;
+}
+
+@keyframes slideInRightAnimation {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Zoom In */
+.zoom-in {
+  transform: scale(0.95);
+  opacity: 0;
+  animation: zoomInAnimation 0.5s forwards;
+}
+
+@keyframes zoomInAnimation {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

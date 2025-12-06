@@ -5,12 +5,12 @@ function Footer() {
       <p className="text-xs text-center text-dark-content dark:text-light-content w-full">
         Designed and Coded by{" "}
         <a
-          className="font-medium"
-          href="https://pavanmg.in"
+          href="https://suganyakannan12.github.io/"
           target="_blank"
-          rel="noreferrer noopener"
+          rel="noreferrer"
+          className="text-gradient font-medium"
         >
-          Pavan MG
+          Suganya Kannan
         </a>{" "}
         with
         <span className="text-gradient font-medium"> Love</span> &

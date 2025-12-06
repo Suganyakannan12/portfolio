@@ -1,25 +1,28 @@
-// Enter all your detials in this file
-// Logo images
-import logogradient from "./assets/logo.svg";
-import logo from "./assets/logo2.svg";
+// Enter all your details in this file
+
+
 // Profile Image
 import profile from "./assets/profile.jpg";
+
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
-import sass from "./assets/techstack/sass.png";
 import js from "./assets/techstack/js.png";
 import react from "./assets/techstack/react.png";
 import redux from "./assets/techstack/redux.png";
 import tailwind from "./assets/techstack/tailwind.png";
-import bootstrap from "./assets/techstack/bootstrap.png";
 import vscode from "./assets/techstack/vscode.png";
 import github from "./assets/techstack/github.png";
 import git from "./assets/techstack/git.png";
 import npm from "./assets/techstack/npm.png";
-import postman from "./assets/techstack/postman.png";
-import figma from "./assets/techstack/figma.png";
-// Porject Images
+
+// Backend technologies
+import express from "./assets/techstack/express.png";
+import nodejs from "./assets/techstack/nodejs.png";        
+import mongodb from "./assets/techstack/mongodb.png";
+import firebase from "./assets/techstack/firebase.png";
+
+// Project Images
 import projectImage1 from "./assets/projects/project1.jpg";
 import projectImage2 from "./assets/projects/project2.jpg";
 import projectImage3 from "./assets/projects/project3.jpg";
@@ -27,21 +30,17 @@ import projectImage4 from "./assets/projects/project4.jpg";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
 
-// Logos
-export const logos = {
-  logogradient: logogradient,
-  logo: logo,
-};
 
-// Enter your Personal Details here
+// PERSONAL DETAILS
 export const personalDetails = {
-  name: "Pavan MG",
-  tagline: "I build things for web",
+  name: "Suganya",
+  tagline: "I build things for the web",
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about:
+    "I am Suganya, a passionate Full Stack Web Developer skilled in building modern, responsive, and user-friendly web applications. I work with HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB to create clean and functional solutions. I enjoy learning new technologies, solving problems, and I am currently looking for remote job opportunities to grow and contribute.",
 };
 
-// Enter your Social Media URLs here
+// SOCIAL MEDIA
 export const socialMediaUrl = {
   linkdein: "https://www.linkedin.com/",
   github: "https://www.github.com/",
@@ -49,127 +48,122 @@ export const socialMediaUrl = {
   instagram: "https://www.instagram.com/",
 };
 
-// Enter your Work Experience here
+// WORK EXPERIENCE
 export const workDetails = [
   {
-    Position: "Frontend Web Developer",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
+    Position: "Internship",
+    Company: `In-Plant Training on Networking at BSNL RGMTTC`,
+    Location: "Meenambakkam, Chennai",
+    Type: "Hands-on training (software and hardware networking fundamentals)",
+    Duration: "Aug 2016 - Oct 2016",
+  },
+  {
+    Position: "Documentation in Quality Analyst - Trainee",
+    Company: `Axles India Pvt Ltd`,
+    Location: "Sriperumbudur, Kanchipuram (DT)",
     Type: "Full Time",
-    Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
-  },
-  {
-    Position: "Internship",
-    Company: `Company Name here`,
-    Location: "Bengaluru",
-    Type: "Internship",
-    Duration: "Sep 2021 - Dec 2021",
+    Duration: "March 2017 - July 2018",
   },
 ];
 
-// Enter your Education Details here
+// EDUCATION DETAILS
 export const eduDetails = [
   {
-    Position: "Frontend Development",
-    Company: "Udemy, YouTube, Google, Medium",
+    Position: "Full Stack Web Development",
+    Company: "Error Makes Clever",
     Location: "Online",
     Type: "Full Time",
-    Duration: "Jan 2022 - Present",
+    Duration: "Aug 2025 - Present",
   },
   {
-    Position: "Bachelor in Electronics & Communication",
-    Company: `Your College Name here`,
-    Location: "Bengaluru",
+    Position: "Bachelor in Computer Science",
+    Company: `Jeppiaar Maamallan Institute of Technology`,
+    Location: "Sriperumbudur, Kanchipuram (DT)",
     Type: "Full Time",
-    Duration: "Aug 2020 - Present",
+    Duration: "Aug 2012 - May 2016",
   },
 ];
 
-// Tech Stack and Tools
+// TECH STACK
 export const techStackDetails = {
-  html: html,
-  css: css,
-  js: js,
-  react: react,
-  redux: redux,
-  sass: sass,
-  tailwind: tailwind,
-  bootstrap: bootstrap,
-  vscode: vscode,
-  postman: postman,
-  npm: npm,
-  git: git,
-  github: github,
-  figma: figma,
+  // Frontend
+  html,
+  css,
+  js,
+  react,
+  redux,
+  tailwind,
+  
+
+  // Backend
+  express,
+  nodejs,       
+  mongodb,
+  firebase,
+
+  // Tools
+  vscode,
+  npm,
+  git,
+  github,
 };
 
-// Enter your Project Details here
+// PROJECTS
 export const projectDetails = [
+  
   {
-    title: "Project title 1",
+    title: "Udemy Clone Project",
     image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `A fully responsive Udemy Clone built with HTML and CSS. It replicates the core UI sections of Udemy, including course cards, category listings, and a modern landing page. Designed to showcase frontend layout and styling skills without using any frameworks.`,
+    techstack: "HTML/CSS",
+    previewLink: " https://suganyakannan12.github.io/udemy-clone/",
+    githubLink: "https://github.com/Suganyakannan12",
+
   },
   {
-    title: "Project title 2",
+    title: "Greenden",
     image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `A stylish plant store website (Greenden) created with HTML and Tailwind CSS. It showcases Tailwind’s utility-first design approach with responsive layouts and neatly styled components.`,
+    techstack: "HTML/CSS, Tailwind CSS",
+    previewLink: "https://suganyakannan12.github.io/greenden/",
+    githubLink: "https://github.com/Suganyakannan12",
   },
   {
-    title: "Project title 3",
+    title: "Nostra",
     image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
+    description: `Nostra is a fully responsive e-commerce fashion landing page developed with HTML, CSS, and JavaScript. It includes interactive UI components, product sections, and a modern layout suitable for online stores.`,
     techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    previewLink: "https://suganyakannan12.github.io/Nostra/index.html",
+    githubLink: "https://github.com/Suganyakannan12",
   },
   {
-    title: "Project title 4",
+    title: "Weather Report",
     image: projectImage4,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `A weather report application built with React, fetching real-time weather data from an API. It features a clean UI, search functionality, and displays current weather conditions for any location.`,
+    techstack: "HTML/CSS, JavaScript, React, API",
+    previewLink: "https://weather-report-gamma-sooty.vercel.app/",
+    githubLink: "https://github.com/Suganyakannan12",
   },
   {
-    title: "Project title 5",
+    title: "Movie Hub",
     image: projectImage5,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `A movie discovery app built using React + TMDB API, with search, pagination, and favorite-movie support through local storage.`,
+    techstack: "HTML/CSS, JavaScript, React, TMDB API",
+    previewLink: "https://movie-hub-c6j5-git-main-suganyas-projects-4daaa91b.vercel.app/",
+    githubLink: "https://github.com/Suganyakannan12",
   },
   {
-    title: "Project title 6",
+    title: "Project-hub",
     image: projectImage6,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: "HTML/CSS, JavaScript",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    description: `A full-stack project management application built with React, Redux, Firebase, Node.js, and Express. It allows users to create, manage, and collaborate on projects with real-time updates and authentication.`,
+    techstack: "HTML/CSS, JavaScript, React, Redux, Firebase, nodejs , express",
+    previewLink: "https://project-hub-frontend-khaki.vercel.app/home",
+    githubLink: "https://github.com/Suganyakannan12",
   },
 ];
 
-// Enter your Contact Details here
+// CONTACT DETAILS
 export const contactDetails = {
-  email: "hi@example.com",
-  phone: "+91 12345 67890",
+  email: "suganyakannan12@gmail.com",
+
 };
