@@ -1,26 +1,30 @@
-// Enter all your details in this file
 
 
 // Profile Image
 import profile from "./assets/profile.jpg";
 
-// Tech stack images
+// Tech Stack
+import bootstrap from "./assets/techstack/bootstrap.png";
+import python from "./assets/techstack/python.png";
+import django from "./assets/techstack/django.png";
+import mysql from "./assets/techstack/mysql.png";
+import sqlite from "./assets/techstack/sqlite.png";
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
 import js from "./assets/techstack/js.png";
 import react from "./assets/techstack/react.png";
 import redux from "./assets/techstack/redux.png";
 import tailwind from "./assets/techstack/tailwind.png";
+import express from "./assets/techstack/express.png";
+import nodejs from "./assets/techstack/nodejs.png";
+import mongodb from "./assets/techstack/mongodb.png";
+import firebase from "./assets/techstack/firebase.png";
 import vscode from "./assets/techstack/vscode.png";
 import github from "./assets/techstack/github.png";
 import git from "./assets/techstack/git.png";
 import npm from "./assets/techstack/npm.png";
-
-// Backend technologies
-import express from "./assets/techstack/express.png";
-import nodejs from "./assets/techstack/nodejs.png";        
-import mongodb from "./assets/techstack/mongodb.png";
-import firebase from "./assets/techstack/firebase.png";
+import postman from "./assets/techstack/postman.png";
+import vercel from "./assets/techstack/vercel.png";
 
 // Project Images
 import projectImage1 from "./assets/projects/project1.jpg";
@@ -30,17 +34,15 @@ import projectImage4 from "./assets/projects/project4.jpg";
 import projectImage5 from "./assets/projects/project5.jpg";
 import projectImage6 from "./assets/projects/project6.jpg";
 
-
-// PERSONAL DETAILS
 export const personalDetails = {
   name: "Suganya",
-  tagline: "I build things for the web",
+  tagline: "Aspiring Python Full Stack Developer",
   img: profile,
   about:
-    "I am Suganya, a passionate Full Stack Web Developer skilled in building modern, responsive, and user-friendly web applications. I work with HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB to create clean and functional solutions. I enjoy learning new technologies, solving problems, and I am currently looking for remote job opportunities to grow and contribute.",
+    "I'm a passionate Python Full Stack Developer with experience in HTML, CSS, JavaScript, React, Python, Django, Node.js, Express.js, MongoDB, MySQL, and Firebase. I enjoy building responsive web applications, solving problems, and learning new technologies. I'm currently seeking opportunities to grow and contribute to real-world projects.",
 };
 
-// SOCIAL MEDIA
+
 export const socialMediaUrl = {
   linkdein: "https://www.linkedin.com/",
   github: "https://www.github.com/",
@@ -64,16 +66,30 @@ export const workDetails = [
     Type: "Full Time",
     Duration: "March 2017 - July 2018",
   },
+  {
+    Position: "Python Full Stack Developer (Internship)",
+    Company: `DLK Technologies`,
+    Location: "Vadapalani, Chennai (DT)",
+    Type: "Full Time",
+    Duration: "Jan 2026 - Present",
+  },
 ];
 
 // EDUCATION DETAILS
 export const eduDetails = [
   {
+    Position: "Python Full Stack Developer",
+    Company: "DLK Technologies ",
+    Location: "Online",
+    Type: "Full Time",
+    Duration: "Jan 2026 - Present",
+  },
+  {
     Position: "Full Stack Web Development",
     Company: "Error Makes Clever",
     Location: "Online",
     Type: "Full Time",
-    Duration: "Aug 2025 - Present",
+    Duration: "Aug 2025 - Dec 2025",
   },
   {
     Position: "Bachelor in Computer Science",
@@ -84,7 +100,6 @@ export const eduDetails = [
   },
 ];
 
-// TECH STACK
 export const techStackDetails = {
   // Frontend
   html,
@@ -93,19 +108,28 @@ export const techStackDetails = {
   react,
   redux,
   tailwind,
-  
+  bootstrap,
 
   // Backend
+  python,
+  django,
+  nodejs,
   express,
-  nodejs,       
+
+  // Database
+  mysql,
   mongodb,
+  sqlite,
   firebase,
 
   // Tools
   vscode,
-  npm,
   git,
   github,
+  npm,
+  postman,
+  vercel,
+  
 };
 
 // PROJECTS

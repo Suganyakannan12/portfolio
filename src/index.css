@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Container */
 .max-width {
   @apply lg:mx-auto lg:px-24 xl:px-48 px-5;
@@ -21,7 +26,7 @@
 
 /* Section Spacing */
 .section {
-  @apply pt-28 xl:pt-28 2xl:pt-44;
+  @apply pt-8;
 }
 
 /* Light/Dark Text */
@@ -32,22 +37,12 @@
 /* Remove Horizontal Scroll */
 body {
   overflow-x: hidden;
+  background-color: #f8fafc;
 }
-
-/* Hide Scrollbar for Chrome, Safari, Opera */
+/* Hide Scrollbar for Chrome, Safari */
 body::-webkit-scrollbar {
   display: none;
 }
-
-/* Hide Scrollbar for Edge + Firefox */
-body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* ========================= */
-/*      ANIMATIONS FIXED      */
-/* ========================= */
 
 /* Fade In */
 .fade-in {

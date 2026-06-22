@@ -10,10 +10,10 @@ function Home() {
   const h13 = useRef(null);
   const myimageref = useRef(null);
 
-  const animated = useRef(false); // 👈 prevents reruns
+  const animated = useRef(false); 
 
   useEffect(() => {
-    if (animated.current) return; // 👈 run only once
+    if (animated.current) return; 
     animated.current = true;
 
     const tl = gsap.timeline();
@@ -34,10 +34,10 @@ function Home() {
         ease: "power3.out",
       });
     }
-  }, [img]); // 👈 include img (warning removed)
+  }, [img]); 
 
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center">
+    <main className="container mx-auto max-width pt-8 md:flex justify-between items-center min-h-[80vh] bg-gradient-to-r from-sky-50 via-indigo-50 to-violet-100 rounded-3xl shadow-lg">
       <div>
         <h1 ref={h11} className="text-2xl md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Hi,👋 <br /> My Name is <br />
